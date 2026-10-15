@@ -50,7 +50,7 @@ def build_dataset(public: bool) -> Path:
     (out / "dataset-metadata.json").write_text(json.dumps({
         "title": "CV Honesty Benchmark",
         "id": DATASET_ID,
-        "subtitle": "Synthetic tabular tasks with a known deployment score, to test validation schemes",
+        "subtitle": "Synthetic tasks with known deployment scores to test CV schemes",
         "description": datasheet,
         "isPrivate": not public,
         "licenses": [{"name": "CC0-1.0"}],
